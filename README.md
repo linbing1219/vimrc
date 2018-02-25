@@ -1,11 +1,11 @@
 vimrc
 =====
 
-my vimrc config
+vimrc config from pykun
 
 Installation
 ============
-    git clone https://github.com/pyKun/vimrc ~/.vim
+    git clone https://github.com/linbing1219/vimrc.git ~/.vim
     cp ~/.vim/.vimrc ~/
     cd ~/.vim/
     git submodule init
