@@ -23,6 +23,7 @@ set t_Co=256
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 set backspace=indent,eol,start
+set paste
 
 """""""""""
 "ctags
@@ -178,27 +179,27 @@ endif
 function! AppendPyHeader()
     call append(0, '#!/usr/bin/env python')
     call append(1, '#-*- coding:utf-8 -*-')
-    call append(2, '# Author: Kun Huang <academicgareth@gmail.com>')
+    call append(2, '# Author: Lin Bing <binglin1219@163.com>')
 endfunction
 autocmd BufNewFile *.py call AppendPyHeader()
 
 function! AppendCSSHeader()
     call append(0, '/*')
-    call append(1, 'Author: Kun Huang <academicgareth@gmail.com>')
+    call append(1, 'Author: Lin Bing <binglin1219@163.com>')
     call append(2, '*/')
 endfunction
 autocmd BufNewFile *.css call AppendCSSHeader()
 
 function! AppendJsHeader()
     call append(0, '/*')
-    call append(1, 'Author: Kun Huang <academicgareth@gmail.com>')
+    call append(1, 'Author: Lin Bing <binglin1219@163.com>')
     call append(2, '*/')
 endfunction
 autocmd BufNewFile *.js call AppendJsHeader()
 
 function! AppendShHeader()
     call append(0, '#!/bin/bash')
-    call append(1, '# Author: Kun Huang <academicgareth@gmail.com>')
+    call append(1, '# Author: Lin Bing <binglin1219@163.com>')
 endfunction
 autocmd BufNewFile *.sh call AppendShHeader()
 
